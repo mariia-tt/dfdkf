@@ -11,9 +11,9 @@ public class Section {
         this.domination = domination;
     }
 
-    public Section setNext(Section next) {
-        this.next = next;
-        return next;
+    public Section setNext(Section nextSection) {
+        this.next = nextSection;
+        return nextSection;
     }
 
     private boolean hasNext() {
@@ -31,7 +31,9 @@ public class Section {
             if (hasNext()) {
                 next.process(left);
             } else {
-                throw new IllformedLocaleException("Remaining amount cannot be processed: " + left);
+                throw new IllformedLocaleException(
+                    "Remaining amount cannot be processed: " + left
+                );
             }
         }
     }

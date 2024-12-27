@@ -1,7 +1,8 @@
 package edu.ucu.ua.traskone;
 
 public class SectionOne extends Section {
-    public SectionOne(){
-        super(1);
+    private static final int DENOMINATION = 1;
+    public SectionOne() {
+        super(DENOMINATION);
     }
 }

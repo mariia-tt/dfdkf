@@ -20,7 +20,8 @@ public class ATM {
 
     public void process(int amount) {
         if (amount <= 0) {
-            throw new IllegalArgumentException("Amount must be greater than zero.");
+            throw new IllegalArgumentException(
+                "Amount must be greater than zero.");
         }
         firstSection.process(amount);
     }

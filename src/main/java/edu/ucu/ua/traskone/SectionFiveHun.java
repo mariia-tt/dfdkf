@@ -1,7 +1,10 @@
 package edu.ucu.ua.traskone;
 
 public class SectionFiveHun extends Section {
-    public SectionFiveHun(){
-        super(500);
+
+    private static final int DENOMINATION = 500;
+
+    public SectionFiveHun() {
+        super(DENOMINATION);
     }
 }
